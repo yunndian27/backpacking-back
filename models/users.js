@@ -97,10 +97,10 @@ const UserSchema = new Schema({
   //   type: String,
   //   enum: ['male', 'female', 'secret']
   // },
-  date: {
-    type: Date,
-    required: [true, '缺少日期']
-  }
+  // date: {
+  //   type: Date,
+  //   required: [true, '缺少日期']
+  // }
 }, { versionKey: false })
 
 UserSchema.pre('save', function (next) {
